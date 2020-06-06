@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<title>登录</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Jolly Games Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link rel="stylesheet" href="css/ihover.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link href="css/style.css" rel='stylesheet' type='text/css' />	
+<script src="js/jquery-1.11.1.min.js"></script>
+<!--webfonts-->
+<link href='http://fonts.useso.com/css?family=Fugaz+One|Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+	</head>
+	<body>
+	<!--开始-主页-->
+	<div id="home" class="header">
+		<div class="header-top">
+			<div class="container">
+			<div class="head-nav">
+				<div class="logo">
+					<a href="index.html"><h1>游戏<span>分享平台</span></h1></a>
+				</div>
+				<div class="clearfix"></div>
+				<span class="menu"></span>
+				<!-- <div class="top-menu">
+					<ul>
+					<li class="active"><a class="color1" href="index.html"  >主页</a></li>
+						<li><a class="color2" href="about.html">关于</a></li>
+						<li><a class="color3" href="gallery.html">展览</a></li>
+						<li><a class="color4" href="contact.html">联系我们</a></li>
+						<li><a class="color5" href="login.html">登录</a></li>
+						<li><a class="color6" href="signup.html">注册</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div> -->
+				<!--script-for-menu-->
+				<script>
+				$( "span.menu" ).click(function() {
+				  $( ".top-menu" ).slideToggle( "slow", function() {
+				    // Animation complete.
+				  });
+				});
+			</script>
+			<!--script-for-menu-->
+			</div>
+		  </div>
+		</div> 
+		<!-- banner-bottom -->
+		<div class="banner">
+			<!-- Slider-开始s-Here -->
+			<script src="js/responsiveslides.min.js"></script>
+				<script>
+				    // You can also use "$(window).load(function() {"
+				    $(function () {
+				      // Slideshow 4
+				      $("#slider3").responsiveSlides({
+				        auto: true,
+				        pager:true,
+				        nav:false,
+				        speed: 500,
+				        namespace: "callbacks",
+				        before: function () {
+				          $('.events').append("<li>before event fired.</li>");
+				        },
+				        after: function () {
+				          $('.events').append("<li>after event fired.</li>");
+				        }
+				      });
+				
+				    });
+				  </script>
+		</div>
+	</div>
+
+	
+			<div class="container container-small model">
+				<h1 style="margin-bottom: 30px;">注册</h1>
+				<div class="container-small-info">
+					<small>现有账号？<a href="login.html">登录</a></small>
+					<small style="margin-left: 40%;"><a href="index.html">首页</a></small>
+				</div>
+				<form>
+					<div class="form-group">
+						<label>手机</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>验证码</label>
+						<div class="input-group">
+							<input type="text" class="form-control">
+							<div class="input-group-btn">
+								<div class="btn btn-default">获取验证码</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label>密码</label>
+						<input type="passwprd" class="form-control">
+					</div>
+					<div class="form-group">
+						<button class="btn btn-primary btn-block" type="submit">注册</button>
+					</div>
+					<div class="form-group">
+						<input type="checkbox" id="check" />
+						<label for="check">注册本平台头条即代表您同意<a href="javascript:void(0);">《本平台头条服务条款》</a></label>
+					</div>
+				</form>
+			</div>	
+   <!--尾部--->
+   <div class="footer text-center">
+	<div class="container">
+		<div class="footer-grids">
+			<div class="col-md-6 footer-text">  
+				<h3>关于我们</h3>
+				<p>分享游戏平台</p>
+				<a class="read" href="about.html">阅读更多</a>
+			</div>
+			<div class="col-md-6 footer-info">
+				<h3>联系我们</h3>
+				<p>如有合作，请致电邮箱！ </p>
+				<div class="support">
+				   <input type="text" class="text" value="请输入您的邮箱..." onfocus="this.value = '';" onblur="if (this.value == '请输入您的邮箱...') {this.value = '请输入您的邮箱...';}">
+				   <input type="submit" value="发送" class="botton">
+				</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+		<div class="copy">
+		  <p>Copyright &copy; 2020.</p>
+		</div>
+	</div>
+</div>
+<!--开始-smoth-scrolling-->
+<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+				<!--开始-smoth-scrolling-->
+			<script type="text/javascript">
+						$(document).ready(function() {
+							$().UItoTop({ easingType: 'easeOutQuart' });
+						});
+					</script>
+<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</body>
+</html>
